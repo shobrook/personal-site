@@ -7,6 +7,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
+  letter-spacing: 1px;
   color: #19263D;
 }
 
@@ -14,8 +15,9 @@ html {
 
 header {
   position: absolute;
-  top: 25%;
-  left: 5%;
+  top: 30%;
+  left: 6%;
+  min-width: 800px;
 }
 
 header h1 {
@@ -30,7 +32,7 @@ header h1 span {
 
 header h2 {
   position: relative;
-  margin-top: 30px;
+  margin-top: 36px;
   max-width: 850px;
   line-height: 65px;
 
@@ -39,12 +41,36 @@ header h2 {
   opacity: .5;
 }
 
-header h2 span {
+header h2 a {
+  color: inherit;
+  text-decoration: none;
   font-weight: 400;
+  cursor: pointer;
 }
 
-header button {
+header h2 a:hover {
+  text-decoration: underline;
+}
 
+.cta {
+  display: inline-block;
+  margin-top: 66px;
+  padding: 23px 35px 23px 35px;
+  border-radius: 5px;
+  max-height: 58px;
+
+  text-decoration: none;
+  color: white;
+  background-color: #D9042F;
+
+  font-size: 40px;
+  font-weight: 400;
+
+  cursor: pointer;
+}
+
+.cta:hover {
+  background-color: #E13D51;
 }
 
 /* Headshot */
@@ -60,5 +86,38 @@ img {
 
 footer {
   position: absolute;
-  bottom: 50px;
+  display: flex;
+  left: 6%;
+  bottom: 75px;
+
+  font-size: 36px;
+  font-weight: 400;
+}
+
+footer div {
+  padding-top: 5px;
+  padding-left: 15px;
+}
+
+footer div a {
+  cursor: pointer;
+}
+
+footer div a:hover {
+  opacity: .75;
+}
+
+footer div img {
+  position: relative;
+  padding-right: 15px;
+  width: 34px;
+  height: 34px;
+
+  pointer-events: none;
+}
+
+/* Responsive */
+
+@media (max-width: ) {
+  
 }
