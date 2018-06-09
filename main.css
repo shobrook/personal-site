@@ -7,7 +7,7 @@
 
 html {
   font-family: 'Roboto', sans-serif;
-  letter-spacing: 1px;
+  letter-spacing: .5px; /* 1px */
   color: #19263D;
 }
 
@@ -17,12 +17,11 @@ header {
   position: absolute;
   top: 30%;
   left: 6%;
-  min-width: 800px;
 }
 
 header h1 {
   display: block;
-  font-size: 92px;
+  font-size: 46px; /* 92px */
   font-weight: 100;
 }
 
@@ -32,12 +31,12 @@ header h1 span {
 
 header h2 {
   position: relative;
-  margin-top: 36px;
-  max-width: 850px;
-  line-height: 65px;
+  margin-top: 18px; /* 36px */
+  max-width: 425px; /* 850px */
+  line-height: 32px; /* 65px */
 
   font-weight: 300;
-  font-size: 46px;
+  font-size: 23px; /* 46px */
   opacity: .5;
 }
 
@@ -54,16 +53,15 @@ header h2 a:hover {
 
 .cta {
   display: inline-block;
-  margin-top: 66px;
-  padding: 23px 35px 23px 35px;
-  border-radius: 5px;
-  max-height: 58px;
+  margin-top: 33px; /* 66px */
+  padding: 11.5px 17.5px 11.5px 17.5px; /* 23px 35px 23px 35px */
+  border-radius: 3px; /* 5px */
 
   text-decoration: none;
   color: white;
   background-color: #D9042F;
 
-  font-size: 40px;
+  font-size: 20px; /* 40px */
   font-weight: 400;
 
   cursor: pointer;
@@ -75,7 +73,7 @@ header h2 a:hover {
 
 /* Headshot */
 
-img {
+.headshot {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -88,15 +86,15 @@ footer {
   position: absolute;
   display: flex;
   left: 6%;
-  bottom: 75px;
+  bottom: 38px; /* 75px */
 
-  font-size: 36px;
+  font-size: 18px; /* 36px */
   font-weight: 400;
 }
 
 footer div {
-  padding-top: 5px;
-  padding-left: 15px;
+  padding-top: 2.5px; /* 5px */
+  padding-left: 7.5px; /* 15px */
 }
 
 footer div a {
@@ -109,15 +107,60 @@ footer div a:hover {
 
 footer div img {
   position: relative;
-  padding-right: 15px;
-  width: 34px;
-  height: 34px;
+  padding-right: 7.5px; /* 15px */
+  width: 17px; /* 34px */
+  height: 17px; /* 34px */
 
   pointer-events: none;
 }
 
 /* Responsive */
 
-@media (max-width: ) {
-  
+@media only screen and (max-width: 1300px) {
+  .headshot {
+    right: -1%;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  .headshot {
+    right: -2%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .headshot {
+    right: -5%;
+  }
+}
+
+@media only screen and (max-width: 1100px) {
+  .headshot {
+    right: -8%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .headshot {
+    right: -16%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .headshot {
+    right: -21%;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  .headshot {
+    right: -26%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .headshot {
+    display: none;
+    width: 0px;
+  }
 }
