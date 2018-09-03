@@ -1,0 +1,15 @@
+.project-card {
+  padding-bottom: 40px;
+  outline: none;
+
+  > img {
+    width: 212px;
+    transition: transform 0.2s;
+
+    border-radius: 3px;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+  }
+}

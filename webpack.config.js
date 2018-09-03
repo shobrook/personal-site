@@ -1,9 +1,9 @@
-const HtmlWebPackPlugin = require("html-webpack-plugin")
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 const htmlPlugin = new HtmlWebPackPlugin({
   template: "./src/index.html",
   filename: "./index.html" // Minified HTML generated in dist
-})
+});
 
 module.exports = {
   module: {
@@ -33,8 +33,12 @@ module.exports = {
             }
           }
         ] */
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        loader: "file-loader"
       }
     ]
   },
   plugins: [htmlPlugin]
-}
+};

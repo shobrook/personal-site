@@ -1,8 +1,32 @@
-$font: "Roboto", sans-serif;
-$heading-size: 42px; // 36px
-$heading-weight: 500;
-$heading-color: #17243C;
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: light;
+  font-weight: 100;
+  src: url("./common/fonts/Sofia-Pro-Light.otf"), format("otf");
+}
 
-$subheading-size: 22px; // 18px
-$subheading-weight: 300;
-$subheading-color: #8A93AA;
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: regular;
+  font-weight: 200;
+  src: url("./common/fonts/Sofia-Pro-Regular.otf"), format("otf");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: medium;
+  font-weight: 400;
+  src: url("./common/fonts/Sofia-Pro-Medium.otf"), format("otf");
+}
+
+@font-face {
+  font-family: "Sofia Pro";
+  font-style: bold;
+  font-weight: 800;
+  src: url("./common/fonts/Sofia-Pro-Bold.otf"), format("otf");
+}
+
+$font: "Sofia Pro";
+
+$heading-weight: 600;
+$subheading-weight: 400;

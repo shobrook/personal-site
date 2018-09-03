@@ -1,0 +1,194 @@
+@import "./common/style/fonts.scss";
+@import "./common/style/colors.scss";
+
+html {
+  font-family: $font;
+  color: $primary-color;
+  margin: auto;
+
+  .main {
+    position: relative;
+    //left: 5%;
+    display: flex;
+    width: calc(100vw - 20px);
+    margin-top: 205px;
+    justify-content: center;
+
+    .header {
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      padding-left: 20px;
+
+      animation: fadeIn 2s forwards;
+      overflow-y: scroll;
+
+      @keyframes fadeIn {
+        0% {
+          opacity: 0;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
+
+      .title {
+        display: flex;
+        align-items: center;
+
+        .headshot {
+          height: 90px;
+          min-width: 90px;
+          border-radius: 3px;
+
+          pointer-events: none;
+        }
+
+        .description {
+          display: flex;
+          flex-direction: column;
+          height: 90px;
+          padding-left: 25px;
+          justify-content: space-between;
+
+          > h1 {
+            margin: 0;
+
+            font-size: 24px;
+            font-weight: $heading-weight;
+          }
+
+          > h2 {
+            margin: 0;
+            width: 250px;
+
+            font-size: 16px;
+            font-weight: $subheading-weight;
+            opacity: 0.75;
+          }
+        }
+      }
+
+      .cta {
+        display: flex;
+        padding-top: 45px;
+
+        font-weight: $subheading-weight;
+
+        .contact,
+        .learn-more {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 3px;
+          cursor: pointer;
+
+          transition: transform 0.2s;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+        .contact {
+          width: 125px;
+          height: 42px;
+          padding-top: 3px;
+
+          color: #ffffff;
+          background-color: $accent-color;
+        }
+
+        .learn-more {
+          width: 125px;
+          margin-left: 18px;
+          padding-top: 3px;
+
+          color: $accent-color;
+          box-sizing: border-box;
+          border: solid 2px $accent-color;
+        }
+      }
+
+      .recruiter-message {
+        position: fixed;
+        margin: 0;
+        bottom: 45px;
+
+        font-weight: 600;
+        font-size: 12px;
+
+        color: $primary-color;
+
+        > a {
+          cursor: pointer;
+          text-decoration: none;
+
+          font-weight: 400;
+          color: $accent-color;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+
+    .projects {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 464px;
+      height: calc(100vh - 205px);
+      padding-left: 125px; //106px;
+      padding-right: 20px;
+      padding-top: 205px;
+      margin-top: 335px;
+
+      animation: slideInBottom 2s forwards;
+
+      overflow-y: scroll;
+
+      @keyframes slideInBottom {
+        0% {
+          margin-top: 335px;
+        }
+        100% {
+          margin-top: -205px;
+        }
+      }
+
+      .top-fader,
+      .bottom-fader {
+        position: fixed;
+        z-index: 5;
+        margin-left: -75px;
+        width: 575px;
+        height: 159px;
+      }
+
+      .top-fader {
+        top: 0px;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0) 100%
+        );
+      }
+
+      .bottom-fader {
+        bottom: 0px;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 1) 100%
+        );
+      }
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
+    }
+  }
+}
