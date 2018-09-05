@@ -140,6 +140,7 @@ html {
       justify-content: space-between;
       flex-wrap: wrap;
       width: 464px;
+      min-width: 464px;
       height: calc(100vh - 205px);
       padding-left: 125px; //106px;
       padding-right: 20px;
@@ -149,6 +150,19 @@ html {
       animation: slideInBottom 2s forwards;
 
       overflow-y: scroll;
+
+      @media only screen and (max-width: 980px) {
+        & {
+          width: 264px;
+          min-width: 264px;
+        }
+      }
+
+      @media only screen and (max-width: 780px) {
+        & {
+          display: none;
+        }
+      }
 
       @keyframes slideInBottom {
         0% {

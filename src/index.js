@@ -10,58 +10,46 @@ import "./index.scss";
 class Main extends Component {
   render() {
     const projects = [
-      ["src/common/images/thumbnails/dasher.png", "http://dashersoftware.com/"],
+      ["./images/thumbnails/dasher.png", "http://dashersoftware.com/"],
       [
-        "src/common/images/thumbnails/neuropipe.png",
+        "./images/thumbnails/neuropipe.png",
         "http://github.com/shobrook/neuropipe"
       ],
       [
-        "src/common/images/thumbnails/bitvision.png",
+        "./images/thumbnails/bitvision.png",
         "http://github.com/shobrook/bitvision"
       ],
       [
-        "src/common/images/thumbnails/typesense.png",
+        "./images/thumbnails/typesense.png",
         "http://github.com/shobrook/typesense"
       ],
+      ["./images/thumbnails/placeholder.png", "http://github.com/shobrook"],
+      ["./images/thumbnails/placeholder.png", "http://github.com/shobrook"],
       [
         "src/common/images/thumbnails/placeholder.png",
         "http://github.com/shobrook"
       ],
-      [
-        "src/common/images/thumbnails/placeholder.png",
-        "http://github.com/shobrook"
-      ],
-      [
-        "src/common/images/thumbnails/placeholder.png",
-        "http://github.com/shobrook"
-      ],
-      [
-        "src/common/images/thumbnails/placeholder.png",
-        "http://github.com/shobrook"
-      ],
-      [
-        "src/common/images/thumbnails/placeholder.png",
-        "http://github.com/shobrook"
-      ],
-      [
-        "src/common/images/thumbnails/placeholder.png",
-        "http://github.com/shobrook"
-      ]
+      ["./images/thumbnails/placeholder.png", "http://github.com/shobrook"],
+      ["./images/thumbnails/placeholder.png", "http://github.com/shobrook"],
+      ["./images/thumbnails/placeholder.png", "http://github.com/shobrook"]
     ];
 
     return (
       <div className="main">
         <header className="header">
           <div className="title">
-            <img className="headshot" src="src/common/images/headshot.jpg" />
+            <img className="headshot" src="./images/headshot.jpg" />
             <div className="description">
               <h1>Jonathan Shobrook</h1>
-              <h2>I build software and study mathematics at UIUC.</h2>
+              <h2>
+                I build <em>software</em> and study <em>mathematics</em> at
+                UIUC.
+              </h2>
             </div>
           </div>
           <div className="cta">
-            <div className="contact">Contact Me</div>
-            <div className="learn-more">Learn More</div>
+            <div className="contact">Say Hello</div>
+            <div className="learn-more">About Me</div>
           </div>
           <h3 className="recruiter-message">
             Are you a recruiter? <a>Read my CV</a>

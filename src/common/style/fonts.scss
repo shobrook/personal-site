@@ -26,7 +26,7 @@
   src: url("./common/fonts/Sofia-Pro-Bold.otf"), format("otf");
 }
 
-$font: "Sofia Pro";
+$font: "Sofia Pro", "Roboto", sans-serif;
 
 $heading-weight: 600;
 $subheading-weight: 400;
